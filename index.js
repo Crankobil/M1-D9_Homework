@@ -1,5 +1,6 @@
 window.onload = () => {
     displayBingoBoard()
+    generateRandomNumber()
 }
 
 
@@ -18,8 +19,9 @@ const displayBingoBoard = () =>  {
 
 const generateRandomNumber = () => {
     let randomNumber = Math.floor(Math.random()*76) + 1
-    return randomNumber
+    let generatorButton = document.querySelector("generator-Button")
+    generatorButton.addEventListener("click", generateRandomNumber)
+    alert("you've just clicked a button!")
 }
 
-let generatorButton = document.querySelector("generator-Button")
-generatorButton.addEventListener("click", generateRandomNumber)
+

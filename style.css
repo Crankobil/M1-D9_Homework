@@ -32,3 +32,12 @@ h1 {
     color: black;
     border-color: #383838;
 }
+
+#generator-Button{
+    color: blue;
+    height: 50px;
+    border-width: 5px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    
+}
